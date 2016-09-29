@@ -13,3 +13,9 @@ The tests in this project require a locally running Rabbit MQ broker. The easies
 rmq_container_id=$(docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq) && sleep 5 && docker exec $rmq_container_id rabbitmq-plugins enable rabbitmq_management
 ```
 
+Collection of Examples
+======================
+
+| Example | Description |
+| ------- | ----------- |
+| [Simple send and receive](src/test/java/ch/lihsmi/spring/amqp/byexample/topicexchange/SimpleSendAndReceiveTest.java) | A very basic example to send an receive messages with `RabbitTemplate` |
