@@ -1,9 +1,8 @@
-package ch.lihsmi.spring.amqp.byexample;
+package ch.lihsmi.spring.amqp.byexample.basics;
 
 import ch.lihsmi.spring.amqp.byexample.config.SimpleRabbitServerConfiguration;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,9 +17,6 @@ public class SimpleSendAndReceiveTest {
 
     @Autowired
     private RabbitTemplate template;
-
-    @Autowired
-    private RabbitAdmin admin;
 
     @Test
     public void messageCanBeSentAndConsumedAsExpected() {
