@@ -1,4 +1,4 @@
-package ch.lihsmi.spring.amqp.byexample.topicexchange;
+package ch.lihsmi.spring.amqp.byexample;
 
 import ch.lihsmi.spring.amqp.byexample.config.SimpleRabbitServerConfiguration;
 import org.junit.Test;
