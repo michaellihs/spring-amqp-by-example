@@ -23,6 +23,7 @@ To make the examples easier to be run separately, each is written as a test with
 | ------- | ----------- |
 | [Simple send and receive](src/test/java/ch/lihsmi/spring/amqp/byexample/basics/SimpleSendAndReceiveTest.java) | A very basic example to send an receive messages with `RabbitTemplate` |
 | [Spring Message Class](src/test/java/ch/lihsmi/spring/amqp/byexample/basics/SpringMessageModelTest.java) | Using the Spring `Message` abstraction to send and receive messages |
+| [Direct Exchange with Configuration and Listener](src/test/java/ch/lihsmi/spring/amqp/byexample/basics/DirectExchangeWithConfigurationAndListenerTest.java) | Using a *Direct Exchange* with Spring Configuration and a Message Listenerd |
 
 
 Further Resources
