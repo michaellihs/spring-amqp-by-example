@@ -65,7 +65,7 @@ public class FanoutExchangeWithConfigurationAndListenerTest {
 
         @Bean
         public Queue queue(FanoutExchange exchange) {
-            Queue queue = new Queue("fanout-queue", false, false, true);
+            Queue queue = new Queue("fanout-declareQueue", false, false, true);
             rabbitAdmin.declareQueue(queue);
             rabbitAdmin.declareBinding(BindingBuilder.bind(queue).to(exchange));
             return queue;
@@ -99,6 +99,7 @@ public class FanoutExchangeWithConfigurationAndListenerTest {
         @Override
         public void onMessage(Message message) {
             this.receivedMessages.add(message);
+            latch.countDown();
         }
 
     }

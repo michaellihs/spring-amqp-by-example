@@ -117,6 +117,7 @@ public class DirectExchangeWithMultipleListenersTest {
         @Override
         public void onMessage(Message message) {
             this.receivedMessages.add(message);
+            latch.countDown();
         }
 
     }
