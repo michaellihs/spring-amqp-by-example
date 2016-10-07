@@ -26,6 +26,7 @@ To make the examples easier to be run separately, each is written as a test with
 | [Direct Exchange with Configuration and Listener](src/test/java/ch/lihsmi/spring/amqp/byexample/exchanges/direct/DirectExchangeWithConfigurationAndListenerTest.java) | Using a *Direct Exchange* with Spring Configuration and a Message Listener |
 | [Direct Exchange with multiple Listeners](src/test/java/ch/lihsmi/spring/amqp/byexample/exchanges/direct/DirectExchangeWithMultipleListenersTest.java) | Using a *Direct Exchange* with multiple Message Listeners |
 | [Fanout Exchange with Configuration and Listener](src/test/java/ch/lihsmi/spring/amqp/byexample/exchanges/fanout/FanoutExchangeWithConfigurationAndListenerTest.java) | Using a *Fanout Exchange* with Spring Configuration and a Message Listener |
+| [Fanout Exchange with multiple Listeners](src/test/java/ch/lihsmi/spring/amqp/byexample/exchanges/fanout/FanoutExchangeWithMultipleListenersTest.java) | Using a *Fanout Exchange* with multiple Message Listeners |
 
 
 Further Resources
