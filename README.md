@@ -74,4 +74,6 @@ Further Resources
 =================
 
 * [Spring AMQP Reference](http://docs.spring.io/spring-amqp/reference/html/)
+* [RabbitMQ - Tutorials](http://www.rabbitmq.com/getstarted.html)
+* [RabbitMQ - Overviews and Introductions](http://www.rabbitmq.com/how.html)
 * [(Book) RabbitMQ Essentials](https://www.packtpub.com/application-development/rabbitmq-essentials)
