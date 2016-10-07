@@ -1,4 +1,4 @@
-package ch.lihsmi.spring.amqp.byexample.basics;
+package ch.lihsmi.spring.amqp.byexample.exchanges.direct;
 
 import ch.lihsmi.spring.amqp.byexample.config.SimpleRabbitServerConfiguration;
 import org.junit.Test;
@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import static ch.lihsmi.spring.amqp.byexample.basics.DirectExchangeWithConfigurationAndListenerTest.TestConfiguration.ROUTING_KEY;
+import static ch.lihsmi.spring.amqp.byexample.exchanges.direct.DirectExchangeWithConfigurationAndListenerTest.TestConfiguration.ROUTING_KEY;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -51,7 +51,7 @@ public class DirectExchangeWithConfigurationAndListenerTest {
 
         private static final String DIRECT_EXCHANGE = "ExchangeTypesTests.DirectExchange";
 
-        public static final String ROUTING_KEY = "direct-exchange-routing-key";
+        static final String ROUTING_KEY = "direct-exchange-routing-key";
 
         @Autowired
         private RabbitAdmin rabbitAdmin;
@@ -97,11 +97,7 @@ public class DirectExchangeWithConfigurationAndListenerTest {
 
         private final List<Message> receivedMessages = new ArrayList<>();
 
-        private final CountDownLatch latch;
-
-        public TestMessageListener() {
-            this.latch = new CountDownLatch(1);
-        }
+        private final CountDownLatch latch = new CountDownLatch(1);
 
         @Override
         public void onMessage(Message message) {
