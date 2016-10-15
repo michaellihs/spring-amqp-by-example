@@ -29,6 +29,7 @@ To make the examples easier to be run separately, each is written as a test with
 | [Fanout Exchange with Configuration and Listener](src/test/java/ch/lihsmi/spring/amqp/byexample/exchanges/fanout/FanoutExchangeWithConfigurationAndListenerTest.java) | Using a *Fanout Exchange* with Spring `@Configuration` and a Message Listener |
 | [Fanout Exchange with multiple Listeners](src/test/java/ch/lihsmi/spring/amqp/byexample/exchanges/fanout/FanoutExchangeWithMultipleListenersTest.java) | Using a *Fanout Exchange* with multiple Message Listeners |
 | [Topic Exchange with multiple Listeners](src/test/java/ch/lihsmi/spring/amqp/byexample/exchanges/topic/TopicExchangeWithMultipleListenersTest.java) | Using a *Topic Exchange* with multiple listeners |
+| [Publisher Confirm](src/test/java/ch/lihsmi/spring/amqp/byexample/connections/PublisherConfirmTest.java) | Using *Publisher Confirms* with multiple listeners |
 
 
 Some Remarks
@@ -77,4 +78,7 @@ Further Resources
 * [Spring AMQP Reference](http://docs.spring.io/spring-amqp/reference/html/)
 * [RabbitMQ - Tutorials](http://www.rabbitmq.com/getstarted.html)
 * [RabbitMQ - Overviews and Introductions](http://www.rabbitmq.com/how.html)
+* [RabbitMQ - Publisher Confirms](http://www.rabbitmq.com/blog/2011/02/10/introducing-publisher-confirms/)
 * [(Book) RabbitMQ Essentials](https://www.packtpub.com/application-development/rabbitmq-essentials)
+* [(PDF) AMQP 0.9.1 - Specification](https://www.rabbitmq.com/resources/specs/amqp0-9-1.pdf)
+* [About Publisher Confirms(Stackoverflow)](http://stackoverflow.com/questions/40058613/how-to-configure-end-to-end-publisher-confirms-with-spring-amqp)
